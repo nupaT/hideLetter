@@ -20,6 +20,7 @@ arrStr.forEach((el) => {
     newLett.innerHTML = el;
   }
   textBox.appendChild(newLett);
+  // not use effect for spaces
   if (newLett.innerHTML !== " ") {
     newLett.addEventListener("mouseover", () => {
       newLett.classList.add("change__opacity");
