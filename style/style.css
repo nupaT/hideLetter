@@ -102,13 +102,13 @@ body {
 }
 
 .space {
-  width: 1em;
+  width: 0.5em;
 }
 
 .change__opacity {
   color: red;
   background-color: #004400;
-  opacity: 50%;
+  opacity: 80%;
   scale: 1.4;
-  transition: 500ms;
+  transition: 200ms;
 }

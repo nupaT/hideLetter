@@ -2,13 +2,17 @@
 
 const textBox = document.querySelector(".text__box");
 const str = document.getElementById("str");
-console.log(str);
-const arrStr = [...str.innerHTML];
-console.log(arrStr);
-
+// remove str block, koz we don't need it
 str.remove();
+// get content from str
+let newStr = str.innerHTML;
+// filter extra spaces
+newStr = newStr.replace(/\s+/g, " ").trim();
+// get array of symbols
+const arrStr = [...newStr];
+
 arrStr.forEach((el) => {
-  let newLett = document.createElement("span");
+  var newLett = document.createElement("span");
   if (el === " ") {
     newLett.innerHTML = " ";
     newLett.classList.add("space");
