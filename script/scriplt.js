@@ -20,10 +20,12 @@ arrStr.forEach((el) => {
     newLett.innerHTML = el;
   }
   textBox.appendChild(newLett);
-  newLett.addEventListener("mouseover", () => {
-    newLett.classList.add("change__opacity");
-  });
-  newLett.addEventListener("mouseout", () => {
-    newLett.classList.remove("change__opacity");
-  });
+  if (newLett.innerHTML !== " ") {
+    newLett.addEventListener("mouseover", () => {
+      newLett.classList.add("change__opacity");
+    });
+    newLett.addEventListener("mouseout", () => {
+      newLett.classList.remove("change__opacity");
+    });
+  }
 });
